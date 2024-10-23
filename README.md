@@ -1,46 +1,47 @@
-Snake Game using Object-Oriented Programming (OOP) in C++
-This project is a classic Snake game implementation developed in C++ using fundamental Object-Oriented Programming (OOP) concepts. The game lets players control a snake that moves around the console screen, eats food, and grows longer. The game demonstrates core OOP principles such as Encapsulation, Inheritance, Polymorphism, and Abstraction.
+### Snake Game Using Object-Oriented Programming (OOP) in C++
 
-Features
-Normal Snake Mode: Move the snake to eat food and grow longer.
-Fast Snake Mode: Choose a faster snake variant that moves more rapidly.
-Score Tracking: Keeps track of the player’s score based on the amount of food eaten.
-Real-time Keyboard Controls: Control the snake using W, A, S, D keys for up, left, down, and right directions.
-Game Over Detection: Ends the game if the snake collides with itself.
-OOP Concepts Used
-1. Encapsulation
-Encapsulation is demonstrated by grouping related attributes and methods within classes. For example, the Snake class contains the snake’s body, direction, and length, while the Board class manages game updates and rendering.
+This project is a classic Snake game implemented in C++, demonstrating key Object-Oriented Programming (OOP) principles. Players can control a snake that moves across the console screen, eats food, and grows in length. The project highlights fundamental OOP concepts such as Encapsulation, Inheritance, Polymorphism, and Abstraction.
 
-2. Inheritance
-The FastSnake class inherits from the Snake class, reusing its properties and behaviors while adding its own unique functionality, such as faster movement.
+#### Game Features
+- **Normal Snake Mode**: Navigate the snake to eat food, causing it to grow longer.
+- **Fast Snake Mode**: Select a faster-moving snake for an added challenge.
+- **Score Tracking**: Displays the player's score based on the number of food items eaten.
+- **Real-time Controls**: Use W, A, S, and D keys to control the snake's movement in up, left, down, and right directions.
+- **Game Over Mechanism**: The game ends if the snake collides with itself.
 
-3. Polymorphism
-Polymorphism is applied by using a base class pointer (Snake*) to handle both Snake and FastSnake objects. The move method in the FastSnake class overrides the one in the Snake class, allowing for dynamic behavior based on the object type.
+#### OOP Concepts Demonstrated
 
-4. Abstraction
-Abstraction is achieved by hiding complex logic behind simple interfaces. The Snake class provides methods like move and changeDirection, and the Board class manages the game loop and input handling without exposing internal details.
+- **Encapsulation**: Encapsulation is achieved by grouping related attributes and methods into appropriate classes. For instance, the `Snake` class manages the snake’s length, body, and direction, while the `Board` class is responsible for rendering and game updates.
 
-Getting Started
-Prerequisites
-A C++ compiler, such as g++.
-A Windows environment (The game uses <windows.h> for console handling).
-Compilation & Execution
-To compile and run the game, open your terminal and navigate to the project directory. Then, use the following commands:
+- **Inheritance**: The `FastSnake` class extends the `Snake` class, inheriting its properties and behavior, but with added functionality for faster movement.
 
-bash
-Copy code
-g++ -o SnakeGame SnakeGame.cpp -lconio
-./SnakeGame
-Controls
-W: Move up
-A: Move left
-S: Move down
-D: Move right
-How to Play
-Run the game executable.
-Choose between Normal Snake or Fast Snake by selecting the corresponding option.
-Control the snake using the WASD keys.
-The game ends if the snake collides with itself.
+- **Polymorphism**: Polymorphism is applied by using a base class pointer (`Snake*`) to refer to both `Snake` and `FastSnake` objects. The `move` method in `FastSnake` overrides the base class method, allowing the behavior to differ based on the object type.
 
-Created by Adarsh Jha. Feel free to contact me at GitHub: AdarshCodes1221 for any questions or suggestions.
+- **Abstraction**: Abstraction is utilized by providing simple methods to interact with the game, such as `move` and `changeDirection` in the `Snake` class. The internal logic of the game, like rendering and input management, is handled by the `Board` class, abstracting complexity from the user.
 
+#### Getting Started
+
+##### Prerequisites
+- A C++ compiler (e.g., `g++`).
+- A Windows environment (the game relies on `<windows.h>` for console handling).
+
+##### Compilation & Execution
+To compile and run the game, open a terminal and navigate to the project directory. Use the following commands:
+
+
+
+##### Controls
+- **W**: Move up
+- **A**: Move left
+- **S**: Move down
+- **D**: Move right
+
+#### How to Play
+1. Run the game executable.
+2. Select between Normal Snake or Fast Snake mode.
+3. Control the snake using the WASD keys to move.
+4. The game ends when the snake collides with itself.
+
+---
+
+Created by **Adarsh Jha**. For questions or suggestions, feel free to reach out via [GitHub: AdarshCodes1221](https://github.com/AdarshCodes1221).
